@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Oswald:600,700);
+
+:root {
+    --bg-color: #BFBFBF;
+    --cal-color: #F2F2F2;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    color: var(--text-color);
+    background: var(--cal-color);
+}
+
+main {
+  padding: 40px;
+}
+
+.calendar {
+    background: var(--cal-color);   
+    display: grid;
+    grid-auto-columns: 5fr;
+    grid-auto-rows: 25px;
+    grid-row-gap: 5px;
+}
+
+.calendar .month {
+    grid-column: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-size: 5em;
+    border-top: 1px solid black;
+    grid-column-gap: 0px;
+    padding-top: 10px;
+}
+
+.calendar .day {
+    grid-column: 2;
+    text-align: right;
+    grid-column-gap: 0px;
+}
+
+
+.calendar .dates, .calendar .day, .calendar .title {
+  font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+
+}
+
+.calendar .dates, .calendar .day {
+    border-top: 1px solid black;
+}
+
+.description {
+  display: block;
+}
+
+.calendar .dates {
+    grid-column: 17;
+}
+
+.calendar .event {
+    margin: 0px 3px 0px 3px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    padding: 0px 5px 0px 5px;
+    position: relative;
+}
+
+.weekend {
+    color: #777777;
+}
+
+.calendar .first {
+    background: #330136;
+}
+
+.calendar .second {
+    background-image: linear-gradient(#5E1742, #59554D);
+}
+
+.calendar .third {
+    background-image: linear-gradient(#962E40, #59554D);
+}
+
+.calendar .another {
+    background-image: linear-gradient(#C9463D, #59554D);
+}
+
+.calendar .fourth {
+    background: #FF5E35;
+}
+
+.calendar .fifth {
+    background: #D64A41;
+}
